@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: #646464;
+}
+
+.App {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
+.player {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-control {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-control input {
+  width: 100%;
+  padding: 2rem 0rem;
+  cursor: pointer;
+}
+
+.time-control p {
+  padding: 1rem;
+}
+
+.play-control {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.play-control svg {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 50%;
+  }
+}
+
+.song {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.song img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.song h1 {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .song img {
+    width: 55%;
+  }
+}
+
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: white;
+  -webkit-box-shadow: 2px 2px 50px #cccccc;
+          box-shadow: 2px 2px 50px #cccccc;
+  overflow: scroll;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.library h2 {
+  padding: 2rem;
+}
+
+.library-song {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.library-song img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.library-song:hover {
+  background: #dee1e1;
+}
+
+.song-description {
+  padding-left: 1rem;
+}
+
+.song-description h3 {
+  font-size: 1rem;
+}
+
+.song-description h4 {
+  font-size: 0.7rem;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+.selected {
+  background: #a5b5e4;
+}
+
+.open-library {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
+
+nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav button {
+  background: transparent;
+  border: 2px solid #414141;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav button:hover {
+  background: #414141;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    z-index: 100;
+  }
+}
+/*# sourceMappingURL=App.css.map */
