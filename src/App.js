@@ -1,13 +1,12 @@
 import React, { useState, useRef } from "react";
 
 //Importing components
-
 import Song from "./components/Song";
 import Player from "./components/Player";
 import Library from "./components/Library";
 import Nav from "./components/Nav";
-//importing data
 
+//importing data
 import Data from "./data";
 
 function App() {
